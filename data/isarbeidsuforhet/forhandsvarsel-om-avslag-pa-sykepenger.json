@@ -1,0 +1,19 @@
+{
+  "mottakerNavn": "Artig Trane",
+  "mottakerFodselsnummer": "12345678945",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": ["Varsel om avslag på sykepenger"]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Her kommer friteksten som veileder skriver inn."]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Med vennlig hilsen", "Kari Saksbehandler", "NAV"]
+    }
+  ]
+}
