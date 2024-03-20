@@ -1,0 +1,48 @@
+{{#each documentComponents }}
+    {{#eq type 'HEADER_H1' }}
+        <h1>
+            {{#each texts }}
+                {{ this }}
+                <br/>
+            {{/each}}
+        </h1>
+    {{else eq type 'HEADER_H2' }}
+        <h2>
+            {{#each texts }}
+                {{ this }}
+                <br/>
+            {{/each}}
+        </h2>
+    {{else eq type 'HEADER_H3' }}
+        <h3>
+            {{#each texts }}
+                {{ this }}
+                <br/>
+            {{/each}}
+        </h3>
+    {{else eq type 'BULLET_POINTS' }}
+        <ul>
+            {{#each texts }}
+                <li>{{ this }}</li>
+            {{/each}}
+        </ul>
+    {{else eq type 'HEADER' }}
+        <h2>
+            {{#each texts }}
+                {{ this }}
+                <br/>
+            {{/each}}
+        </h2>
+    {{else eq type 'LINK' }}
+        {{#each texts }}
+            <p><a href="{{ this }}">{{ this }}</a></p>
+        {{/each}}
+    {{else}} <!-- eq type PARAGRAPH -->
+    <p>
+        {{#each texts }}
+            {{ breaklines this }}
+            <br/>
+        {{/each}}
+    </p>
+    {{/eq}}
+{{/each}}

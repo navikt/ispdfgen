@@ -1,0 +1,39 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: ispdfgen
+  namespace: teamsykefravr
+  labels:
+    team: teamsykefravr
+spec:
+  image: {{ image }}
+  port: 8080
+  replicas:
+    min: 1
+    max: 2
+    cpuThresholdPercentage: 70
+  liveness:
+    path: /internal/is_alive
+    timeout: 1
+    initialDelay: 5
+    periodSeconds: 5
+    failureThreshold: 30
+  readiness:
+    path: /internal/is_ready
+    timeout: 1
+    initialDelay: 5
+    periodSeconds: 5
+    failureThreshold: 30
+  prometheus:
+    enabled: true
+    path: /prometheus
+  resources:
+    limits:
+      memory: 500Mi
+    requests:
+      cpu: 5m
+      memory: 100Mi
+  accessPolicy:
+    inbound:
+      rules:
+        - application: isfrisktilarbeid

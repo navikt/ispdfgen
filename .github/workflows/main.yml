@@ -1,0 +1,38 @@
+name: main
+
+on: push
+
+jobs:
+  build:
+    name: Checkout code and create docker tag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build and publish Docker image
+        uses: nais/docker-build-push@v0
+        id: docker-build-push
+        with:
+          team: teamsykefravr
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
+          tag: ${{ github.sha }}
+    outputs:
+      image: ${{ steps.docker-build-push.outputs.image }}
+
+  nais-deploy:
+    needs: build
+    permissions:
+      contents: read
+      id-token: write
+    uses: navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@master
+    with:
+      image: ${{ needs.build.outputs.image }}
+      dev-cluster: dev-gcp
+      prod-cluster: prod-gcp
+      dev-nais-template: .nais/nais-dev.yaml
+      prod-nais-template: .nais/nais-prod.yaml
+    secrets: inherit
