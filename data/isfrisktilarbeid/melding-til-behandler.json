@@ -1,0 +1,18 @@
+{
+  "mottakerNavn": "Lege Legesen",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": ["Melding om vedtak friskmelding til arbeidsformidling"]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Fast tekst om vedtak fra dato til dato"]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Med vennlig hilsen", "Kari Saksbehandler", "NAV"]
+    }
+  ]
+}
