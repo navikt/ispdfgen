@@ -1,0 +1,59 @@
+{
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Endret dialogmøte"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Sendt 9. mars 2022, kl. 12.00"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Møtetidspunkt",
+      "texts": [
+        "20. mai 2021, Storgata 4"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Møtested",
+      "texts": [
+        "Videomøte på Teams"
+      ]
+    },
+    {
+      "type": "LINK",
+      "title": "Lenke til videomøte",
+      "texts": [
+        "https://teams.microsoft.com/l/osv.osv.osv"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder Artig Trane, f.nr. 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Tid og/eller sted for dialogmøtet har blitt endret."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden",
+        "Kari Saksbehandler",
+        "kari@nav.no",
+        "99998888"
+      ]
+    }
+  ]
+}

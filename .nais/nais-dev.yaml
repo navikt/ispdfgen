@@ -38,3 +38,4 @@ spec:
       rules:
         - application: isfrisktilarbeid
         - application: isarbeidsuforhet
+        - application: isdialogmote

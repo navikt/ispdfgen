@@ -1,4 +1,7 @@
 {{#each documentComponents }}
+    {{#if title }}
+        <h3>{{ title }}</h3>
+    {{/if}}
     {{#eq type 'HEADER_H1' }}
         <h1>
             {{#each texts }}
