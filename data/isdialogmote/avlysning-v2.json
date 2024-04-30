@@ -1,0 +1,45 @@
+{
+  "mottakerNavn": "Artig Trane",
+  "mottakerFodselsnummer": "12345678945",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Avlysning av dialogmøte"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Sendt 9. mars 2022, kl. 12.00"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder Artig Trane, f.nr. 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "NAV har tidligere innkalt til dialogmøte som skulle vært avholdt 22.10.2021 klokka 12. Dette møtet er avlyst."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Her kommer en fritekst skrevet av veilederen."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden",
+        "Kari Saksbehandler"
+      ]
+    }
+  ]
+}
