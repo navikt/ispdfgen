@@ -1,7 +1,11 @@
 <div class="header">
     <div class="mottaker-info-container">
-        <p class="mottaker">Til: {{ mottakerNavn }}</p>
-        <p class="fodselsnummer">Fødselsnummer: {{ mottakerFodselsnummer }}</p>
+        {{#if mottakerNavn}}
+            <p class="mottaker">Til: {{ mottakerNavn }}</p>
+        {{/if}}
+        {{#if mottakerFodselsnummer}}
+            <p class="fodselsnummer">Fødselsnummer: {{ mottakerFodselsnummer }}</p>
+        {{/if}}
     </div>
     <div class="logo-container">
         <img class="navlogo" alt="Nav-logo" src="{{ image "Navlogo.png" }}"/>

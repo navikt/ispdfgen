@@ -1,0 +1,130 @@
+{
+  "mottakerNavn": "Artig Trane",
+  "mottakerFodselsnummer": "12345678945",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Referat fra dialogmøte"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Sendt 9. mars 2022, kl. 12.00"
+      ]
+    },
+    {
+      "type": "HEADER_H2",
+      "texts": [
+        "Artig Trane, 30. april 2021, på Frisk legekontor"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Deltakere i møtet",
+      "texts": [
+        "Arbeidstaker: Artig Trane",
+        "Arbeidsgiver: Grønn Bamse",
+        "Fra NAV: Kari Saksbehandler"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Formålet med møtet var å oppsummere situasjonen, drøfte mulighetene for å arbeide og legge en plan for tiden framover."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Sykdom og diagnose er underlagt taushetsplikt. Derfor er helsen din bare et tema hvis du selv velger å være åpen om den. Av hensyn til personvernet inneholder referatet uansett ikke slike opplysninger."
+      ]
+    },
+    {
+      "type": "HEADER_H2",
+      "texts": [
+        "Dette skjedde i møtet"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Konklusjon",
+      "texts": [
+        "Pulchritudine velums, tanquam superbus boreas. Ubi est castus classis. Impositio de domesticus visus, promissio nutrix."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Din oppgave",
+      "texts": [
+        "Cum humani generis ortum, omnes accolaes captis fatalis, bassus tumultumquees. Ortum semper ducunt ad nobilis calceus."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Arbeidsgiverens oppgave",
+      "texts": [
+        "Festus vita vix experientias nutrix est. Hercle, abactor dexter. "
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "NAVs oppgave",
+      "texts": [
+        "Cum epos favere, omnes medicinaes demitto nobilis, barbatus rectores. Est camerarius genetrix, cesaris."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Situasjon og muligheter",
+      "texts": [
+        "Cum assimilatio messis, omnes xiphiases imitari ferox, domesticus danistaes. Hercle, habena gratis. Nunquam acquirere abnoba."
+      ]
+    },
+    {
+      "type": "HEADER_H2",
+      "texts": [
+        "Dette informerte NAV om i møtet"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "key": "AVKLARING_ARBEIDSEVNE",
+      "title": "Avklaring om arbeidsevnen",
+      "texts": [
+        "Du kan få kartlagt eller prøvd ut arbeidsevnen din. Avklaringen kan skje der du jobber eller på en annen arbeidsplass. Da undersøker vi om du kan utføre jobben med noen tilpasninger, om du kan få påfyll av kompetanse, eller om det er muligheter i et annet yrke. Avklaringen varer som regel i fire uker, men kan forlenges inntil åtte uker ved behov."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "key": "FRISKMELDING_ARBEIDSFORMIDLING",
+      "title": "Friskmelding til arbeidsformidling",
+      "texts": [
+        "Denne ordningen er aktuell dersom helsen din er slik at du kan komme tilbake i arbeid, men ikke til den jobben du er sykmeldt fra. Hvis alle muligheter for å komme tilbake til arbeidsplassen din er forsøkt, kan du få sykepenger i inntil 12 uker mens du søker ny jobb. Maksimal periode med sykepenger er 52 uker, inkludert ukene med friskmelding til arbeidsformidling."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "key": "OKONOMISK_STOTTE",
+      "title": "Hjelp til å søke om annen økonomisk støtte",
+      "texts": [
+        "Klarer du ikke å komme tilbake i arbeid før den siste dagen du har rett til sykepenger, trenger vi et nytt dialogmøte. Da vil vi snakke sammen om hvordan du eventuelt kan søke om annen økonomisk støtte fra NAV."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Kari Saksbehandler"
+      ]
+    }
+  ]
+}
