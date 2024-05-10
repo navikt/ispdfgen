@@ -1,0 +1,78 @@
+{
+  "mottakerNavn": "Artig Trane",
+  "mottakerFodselsnummer": "12345678945",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Varsel om stans av sykepenger"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du har nå vært sykmeldt i mer enn åtte uker. Da har du plikt til å være i aktivitet. Ut fra opplysningene NAV har i saken har vi vurdert at du ikke oppfyller vilkårene for å unntas aktivitetsplikten. Vi vurderer å stanse sykepengene dine fra og med [sett inn dato 3 uker frem i tid]."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Her kommer friteksten som veileder skriver inn."
+      ]
+    },
+    {
+      "type": "HEADER_H3",
+      "texts": [
+        "Du kan unngå stans av sykepenger"
+      ]
+    },
+    {
+      "type": "BULLET_POINTS",
+      "texts": [
+        "Kommer du helt eller delvis tilbake i arbeid, oppfyller du aktivitetsplikten og kan fortsatt få sykepenger. Aktivitet kan dokumenteres med gradert sykmelding eller i søknaden.",
+        "Gir arbeidsgiveren din en skriftlig begrunnelse for at det ikke er mulig å legge til rette for at du kan jobbe, kan utbetalingen av sykepenger fortsette.",
+        "Går det fram av sykmeldingen at du er for syk til å arbeide, får du fortsatt sykepenger."
+      ]
+    },
+    {
+      "type": "HEADER_H3",
+      "texts": [
+        "Gi oss tilbakemelding"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi må ha tilbakemelding fra deg, arbeidsgiveren din eller den som har sykmeldt deg innen 10. oktober 2023 {dato 3 uker frem i tid}. Ellers vil sykepengene dine stanses fra denne datoen.",
+        "Kontakt oss gjerne på nav.no/skriv-til-oss eller telefon 55 55 33 33."
+      ]
+    },
+    {
+      "type": "HEADER_H3",
+      "texts": [
+        "Lovhjemmel"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Aktivitetsplikten er beskrevet i folketrygdloven § 8-8 2.ledd."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "«Medlemmet har plikt til å være i arbeidsrelatert aktivitet, jf. § 8-7 a første ledd og arbeidsmiljøloven § 4-6 første ledd, så tidlig som mulig, og senest innen 8 uker. Dette gjelder ikke når medisinske grunner klart er til hinder for slik aktivitet, eller arbeidsrelaterte aktiviteter ikke kan gjennomføres på arbeidsplassen.»"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med vennlig hilsen",
+        "Kari Saksbehandler",
+        "NAV"
+      ]
+    }
+  ]
+}
