@@ -1,0 +1,41 @@
+{
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Vurdering av aktivitetskravet"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder Artig Trane, f.nr. 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Det ble vurdert unntak fra aktivitetskravet den 14. desember 2023. Årsak: Medisinske grunner."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Her kommer friteksten som veileder skriver inn."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vedtak ble fattet etter folketrygdloven § 8-8 andre ledd, samt tilhørende rundskriv."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vurdert av Kari Saksbehandler"
+      ]
+    }
+  ]
+}

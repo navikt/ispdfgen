@@ -36,6 +36,7 @@ spec:
   accessPolicy:
     inbound:
       rules:
+        - application: isaktivitetskrav
         - application: isfrisktilarbeid
         - application: isarbeidsuforhet
         - application: isdialogmote
