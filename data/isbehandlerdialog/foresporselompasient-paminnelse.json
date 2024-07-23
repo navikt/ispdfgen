@@ -1,0 +1,44 @@
+{
+  "mottakerNavn": "Lege Legesen",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Påminnelse"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "F.nr. 12345678945, Artig Trane."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi viser til tidligere forespørsel angående din pasient."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi kan ikke se å ha mottatt svar på vår henvendelse og ber om at vår anmodning om opplysninger angående overnevnte pasient besvares snarest."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis opplysningene er sendt oss i løpet av de siste dagene, kan du se bort fra dette brevet."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden",
+        "Siri Saksbehandler"
+      ]
+    }
+  ]
+}

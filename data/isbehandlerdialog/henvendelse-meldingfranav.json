@@ -1,0 +1,26 @@
+{
+  "mottakerNavn": "Lege Legesen",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Melding fra NAV"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder pasient: Artig Trane, 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden",
+        "Siri Saksbehandler"
+      ]
+    }
+  ]
+}

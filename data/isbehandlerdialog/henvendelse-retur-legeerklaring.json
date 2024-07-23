@@ -1,0 +1,50 @@
+{
+  "mottakerNavn": "Lege Legesen",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Retur av Legeerklæring ved arbeidsuførhet"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder: Artig Trane, 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi har mottatt Legeerklæring ved arbeidsuførhet (NAV 08-07.08). Vi ber om at du sender oss en ny legeerklæring snarest mulig."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Erklæringen kan ikke honoreres fordi den ikke inneholder tilstrekkelige opplysninger til bruk i den videre behandlingen av saken."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du har spørsmål til utfyllingen, henvises det til \"Orientering til legen om bruk og utfylling av Legeerklæring ved arbeidsuførhet\" (se nav.no )."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Dersom du allerede har sendt inn regning for den mangelfulle erklæringen, forutsetter vi at det ikke blir sendt regning for ny utfylt Legeerklæring ved arbeidsuførhet."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden",
+        "Siri Saksbehandler"
+      ]
+    }
+  ]
+}
