@@ -40,3 +40,4 @@ spec:
         - application: isfrisktilarbeid
         - application: isarbeidsuforhet
         - application: isdialogmote
+        - application: isbehandlerdialog

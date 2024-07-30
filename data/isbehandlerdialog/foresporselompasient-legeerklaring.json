@@ -1,0 +1,57 @@
+{
+  "mottakerNavn": "Lege Legesen",
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": [
+        "Forespørsel om «Legeerklæring ved arbeidsuførhet»"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder pasient: Artig Trane, 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Som et ledd i NAVs videre oppfølging av pasienten din har vi behov for informasjon fra deg."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Opplysninger som etter din vurdering faller utenfor formålet, kan du utelate i oversendelsen til NAV."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "«Legeerklæring ved arbeidsuførhet» leveres på blankett NAV 08-07.08, og honoreres med takst L40."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "title": "Lovhjemmel",
+      "texts": [
+        "Folketrygdloven § 21-4 andre ledd gir NAV rett til å innhente nødvendige opplysninger. Dette gjelder selv om opplysningene er taushetsbelagte, jf. § 21-4 sjette ledd."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Pålegget om utlevering av opplysninger kan påklages etter forvaltningsloven § 14. Klageadgangen gjelder kun lovligheten av pålegget. Fristen for å klage er tre dager etter at pålegget er mottatt. Klagen kan fremsettes muntlig eller skriftlig."
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med hilsen",
+        "NAV Staden",
+        "Siri Saksbehandler"
+      ]
+    }
+  ]
+}
