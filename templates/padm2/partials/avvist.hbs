@@ -1,0 +1,15 @@
+{{#eq validationResult.status "INVALID" }}
+    <h3>Begrunnelse for avvisning</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>{{#each validationResult.ruleHits}}
+                        <li>{{messageForSender}}</li>
+                    {{/each}}
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{{/eq}}

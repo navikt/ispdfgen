@@ -33,6 +33,8 @@ spec:
     requests:
       cpu: 5m
       memory: 100Mi
+  ingresses:
+    - "https://ispdfgen.intern.dev.nav.no"
   accessPolicy:
     inbound:
       rules:
@@ -42,3 +44,4 @@ spec:
         - application: isdialogmote
         - application: isbehandlerdialog
         - application: ismanglendemedvirkning
+        - application: padm2

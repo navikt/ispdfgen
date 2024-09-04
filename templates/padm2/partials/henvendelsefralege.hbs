@@ -1,0 +1,35 @@
+{{#if dialogmelding.henvendelseFraLegeHenvendelse }}
+    <h3>Henvendelse fra lege</h3>
+    <table>
+
+        <tr>
+            <th>Svar/henvendelse</th>
+        </tr>
+        <tr>
+            <td class="cellBottom">{{ dialogmelding.henvendelseFraLegeHenvendelse.temaKode.dn }}</td>
+        </tr>
+
+        <tr>
+            <th>Pasient</th>
+        </tr>
+        <tr>
+            <td class="cellBottom">{{ pasientFnr }}</td>
+        </tr>
+
+
+        <tr>
+            <th>Pasientnavn</th>
+        </tr>
+        <tr>
+            <td class="cellBottom">{{ pasientNavn }}</td>
+        </tr>
+
+        <tr>
+            <th>Notat</th>
+        </tr>
+        <tr>
+            <td>{{ breaklines dialogmelding.henvendelseFraLegeHenvendelse.tekstNotatInnhold }}</td>
+        </tr>
+
+    </table>
+{{/if}}

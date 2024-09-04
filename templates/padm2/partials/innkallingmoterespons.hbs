@@ -1,0 +1,33 @@
+{{#if dialogmelding.innkallingMoterespons }}
+    <h3>Svar innkalling dialogmøte </h3>
+    <table>
+        <tr>
+            <th>Svar/henvendelse</th>
+        </tr>
+        <tr>
+            <td class="cellBottom">{{ dialogmelding.innkallingMoterespons.temaKode.dn }}</td>
+        </tr>
+
+        <tr>
+            <th>Pasient-fnr</th>
+        </tr>
+        <tr>
+            <td class="cellBottom">{{ pasientFnr }}</td>
+        </tr>
+
+        <tr>
+            <th>Pasientnavn</th>
+        </tr>
+        <tr>
+            <td class="cellBottom">{{ pasientNavn }}</td>
+        </tr>
+
+        <tr>
+            <th>Notat</th>
+        </tr>
+        <tr>
+            <td>{{ breaklines dialogmelding.innkallingMoterespons.tekstNotatInnhold }}</td>
+        </tr>
+
+    </table>
+{{/if}}
