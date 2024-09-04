@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        @page {
+            margin: 1cm;
+        }
+
+        * {
+            font-family: "Source Sans Pro", SourceSansPro, Source_Sans_Pro, ArialSystem, sans-serif;
+        }
+
+        img {
+            width: 10%;
+            height: auto;
+            margin-left: 0.1em;
+        }
+
+        h1 {
+            font-size: 1.25em;
+        }
+
+        h3 {
+            margin: 1.5em 0 0.5em  0;
+        }
+
+        td {
+            font-size: 0.9em;
+            padding: 4px;
+            vertical-align: top;
+            word-wrap: break-word;
+        }
+
+        th {
+            font-size: .8em;
+        }
+
+        table {
+            width: 100%;
+            border: 1px black solid;
+            margin-bottom: 0.5cm;
+            margin-left: 0.1em;
+        }
+
+        body {
+            page-break-inside: avoid;
+        }
+
+        .cellBottom {
+            border-bottom: 1px black solid;
+        }
+
+    </style>
+    <title>{{ doctitle }} </title>
+</head>
+<body>
+
+<div id="header">
+    <img alt="nav-logo" class="navlogo" src="{{ image "nav-logo-red.png" }}"/>
+    <h1 class="title">{{> title}}</h1>
+</div>
+
+<table>
+    <tr>
+        <th>Til</th>
+    </tr>
+    <tr>
+        <td class="cellBottom">NAV</td>
+    </tr>
+
+    <tr>
+        <th>Fra behandlende lege</th>
+    </tr>
+    <tr>
+        <td class="cellBottom">{{ dialogmelding.navnHelsepersonell }}</td>
+    </tr>
+
+    <tr>
+        <th>Signerende lege</th>
+    </tr>
+    <tr>
+        <td class="cellBottom">{{ navnSignerendeLege }}</td>
+    </tr>
+
+    <tr>
+        <th>Sendt</th>
+    </tr>
+    <tr>
+        <td class="cellBottom">{{ iso_to_nor_date dialogmelding.signaturDato }}</td>
+    </tr>
+
+    <tr>
+        <th>Dokumentreferanse</th>
+    </tr>
+    <tr>
+        {{> padm2/partials/dokumentreferanse }}
+    </tr>
+
+</table>
+
+{{> padm2/partials/innkallingmoterespons }}
+{{> padm2/partials/foresporselsvar }}
+{{> padm2/partials/henvendelsefralege }}
+{{> padm2/partials/avvist }}
+
+
+</body>
+</html>

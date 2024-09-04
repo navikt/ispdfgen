@@ -1,0 +1,109 @@
+{
+  "dialogmelding": {
+    "id": "c8712c30-ee63-4ab8-9508-3f73a6207a89",
+    "innkallingMoterespons": {
+      "teamakode": {
+        "kodeverkOID": "2.16.578.1.12.4.1.1.8126",
+        "dn": "Ja, jeg kommer",
+        "v": "1",
+        "arenaNotatKategori": "1",
+        "arenaNotatKode": "11",
+        "arenaNotatTittel": "Svar innkalling dialogmøte:Ja, jeg kommer"
+      },
+      "tekstNotatInnhold": "Ta gjerne kontakt ang hvilket telefonnummer jeg skal ringe. Litt ekstra tekst bare for at denne skal bli litt lenger! Mvh Lege Legesen!",
+      "dokIdNotat": "OD1812186729156",
+      "foresporsel": {
+        "typeForesp": {
+          "dn": "Innkalling dialogmøte 2",
+          "s": "2.16.578.1.12.4.1.1.8125",
+          "v": "1"
+        },
+        "sporsmal": "Endret møtetidspunkt for dialogmøteGjelder Test Etternavn.NAV har tidligere innkalt til et dialogmøte angående din pasient. Møtet skulle vært\n                                    avholdt 03.09.2020 klokken 14:00.Dette møtet må flyttes, og vi foreslår nytt møtetidspunkt 22.09.2020 klokken 12:00.Møtested: SvingenHvis tidspunktet ikke\n                                    passer ber vi om en rask tilbakemelding.Vi gjør oppmerksom på at det er obligatorisk å delta i dialogmøter med NAV med mindre det er gyldig grunn for\n                                    fravær.Fastlege deltar pr telefon. Med hilsenNAVJon PersonAktuelle lover: Både folketrygdloven og arbeidsmiljøloven har bestemmelser om\n                                    sykefraværsoppfølging:Folketrygdloven § 8-4 og § 8-7Arbeidsmiljøloven § 4-6InformasjonØnsker du mer informasjon om regler og ordninger for oppfølging av\n                                    sykmeldte?www.nav.no og www.arbeidstilsynet.no Lokalt NAV-kontor",
+        "dokIdForesp": "OD1812186729156",
+        "rollerRelatertNotat": {
+          "rolleNotat": {
+            "s": "2.16.578.1.12.4.1.1.9057",
+            "v": "1"
+          },
+          "person": {
+            "givenName": "jon",
+            "familyName": "Person"
+          },
+          "helsepersonell": null
+        }
+      }
+    },
+    "foresporselFraSaksbehandlerForesporselSvar": {
+      "teamakode": {
+        "kodeverkOID": "2.16.578.1.12.4.1.1.8129",
+        "dn": "Forespørsel om pasient",
+        "v": "1",
+        "arenaNotatKategori": "",
+        "arenaNotatKode": "",
+        "arenaNotatTittel": ""
+      },
+      "tekstNotatInnhold": "Pasienten har masse info her\n  -Vedlegg 1: Epikrise\n  -Vedlegg 2: Røntgen-bilde\n -Vedlegg 3: Støvsugermanual",
+      "dokIdNotat": "",
+      "datoNotat": "2020-05-19T08:24:07.139419"
+    },
+    "henvendelseFraLegeHenvendelse": {
+      "teamakode": {
+        "kodeverkOID": "2.16.578.1.12.4.1.1.8128",
+        "dn": "Henvendelse om pasient som ikke er sykmeldt",
+        "v": "2",
+        "arenaNotatKategori": "3",
+        "arenaNotatKode": "32",
+        "arenaNotatTittel": "Henvendelse fra lege"
+      },
+      "tekstNotatInnhold": "Jeg er klar 12.30.\n Mvh, Lege legsesn",
+      "dokIdNotat": "",
+      "foresporsel": {
+        "typeForesp": {
+          "dn": "Forespørsel om pasient",
+          "s": "2.16.578.1.12.4.1.1.8129",
+          "v": "1"
+        },
+        "sporsmal": "Ønsker info om pasient",
+        "dokIdForesp": "OD1812186729156",
+        "rollerRelatertNotat": {
+          "rolleNotat": {
+            "s": "2.16.578.1.12.4.1.1.9057",
+            "v": "1"
+          },
+          "person": {
+            "givenName": "jon",
+            "familyName": "Person"
+          },
+          "helsepersonell": {
+            "givenName": "helse",
+            "familyName": "Person"
+          }
+        }
+      },
+      "rollerRelatertNotat": null
+    },
+    "navnHelsepersonell": "Hansen, Per",
+    "signaturDato": "2017-11-05T00:00:00"
+  },
+  "validationResult": {
+    "status": "INVALID",
+    "ruleHits": [
+      {
+        "ruleName": "PASIENT_YNGRE_ENN_13",
+        "messageForSender": "Pasienten er under 13 år. Sykmelding kan ikke benyttes.",
+        "messageForUser": "Pasienten er under 13 år. Sykmelding kan ikke benyttes.",
+        "ruleStatus": "INVALID"
+      },
+      {
+        "ruleName": "PASIENT_ELDRE_ENN_70",
+        "messageForSender": "Pasienten er over 70 år. Sykmelding kan ikke benyttes.",
+        "messageForUser": "Sykmelding kan ikke benyttes etter at du har fylt 70 år",
+        "ruleStatus": "INVALID"
+      }
+    ]
+  },
+  "pasientFnr": "3214141414",
+  "pasientNavn": "Koronasen, Kovid",
+  "navnSignerendeLege": "Sjefslege, Bossie",
+  "antallVedlegg" : 1
+}
