@@ -1,0 +1,17 @@
+{
+  "datoSendt": "19. september 2023",
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": ["Unntak for manglende medvirkning"]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Her kommer friteksten som veileder skriver inn."]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Med vennlig hilsen", "Kari Saksbehandler", "NAV"]
+    }
+  ]
+}
