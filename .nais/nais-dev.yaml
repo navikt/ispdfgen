@@ -44,4 +44,5 @@ spec:
         - application: isdialogmote
         - application: isbehandlerdialog
         - application: ismanglendemedvirkning
+        - application: isoppfolgingsplan
         - application: padm2
