@@ -1,9 +1,14 @@
 {
-  "datoSendt": "19. september 2023",
   "documentComponents": [
     {
       "type": "HEADER_H1",
       "texts": ["Forespørsel om oppfølgingsplan"]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Dato sendt: 15. januar 2025"
+      ]
     },
     {
       "type": "PARAGRAPH",
