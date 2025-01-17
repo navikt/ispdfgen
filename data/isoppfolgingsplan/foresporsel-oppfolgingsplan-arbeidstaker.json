@@ -1,0 +1,28 @@
+{
+  "documentComponents": [
+    {
+      "type": "HEADER_H1",
+      "texts": ["Forespørsel om oppfølgingsplan"]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Dato sendt: 15. januar 2025"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder Artig Trane, f.nr. 12345678945"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Nav har bedt nærmeste leder Grønn Bamse om å sende inn en oppfølgingsplan."]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": ["Med vennlig hilsen", "Kari Saksbehandler", "Nav"]
+    }
+  ]
+}
