@@ -2,7 +2,7 @@
   "documentComponents": [
     {
       "type": "HEADER_H1",
-      "texts": ["Forespørsel om oppfølgingsplan"]
+      "texts": ["Nav ber om oppfølgingsplan fra arbeidsgiver"]
     },
     {
       "type": "PARAGRAPH",
@@ -13,16 +13,18 @@
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Gjelder Artig Trane, f.nr. 12345678945"
+        "Gjelder Artig Trane, f.nr. 12345678945."
       ]
     },
     {
       "type": "PARAGRAPH",
-      "texts": ["Nav har bedt nærmeste leder Grønn Bamse om å sende inn en oppfølgingsplan."]
+      "texts": [
+        "Mottaker: Grønn Bamse, SJOKKERENDE ELEKTRIKER."
+      ]
     },
     {
       "type": "PARAGRAPH",
-      "texts": ["Med vennlig hilsen", "Kari Saksbehandler", "Nav"]
+      "texts": ["Hei,  Nav ber om at du sender inn oppfølgingsplan for en av dine ansatte som er sykmeldt.\nLogg inn på \"Min side - arbeidsgiver\". I \"bjella\" ser du hvem det gjelder.\n\nHar du spørsmål, kan du kontakte oss på 55 55 33 36.\n\nVennlig hilsen Nav"]
     }
   ]
 }
