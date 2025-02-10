@@ -18,7 +18,7 @@
           "s": "2.16.578.1.12.4.1.1.8125",
           "v": "1"
         },
-        "sporsmal": "Endret møtetidspunkt for dialogmøteGjelder Test Etternavn.NAV har tidligere innkalt til et dialogmøte angående din pasient. Møtet skulle vært\n                                    avholdt 03.09.2020 klokken 14:00.Dette møtet må flyttes, og vi foreslår nytt møtetidspunkt 22.09.2020 klokken 12:00.Møtested: SvingenHvis tidspunktet ikke\n                                    passer ber vi om en rask tilbakemelding.Vi gjør oppmerksom på at det er obligatorisk å delta i dialogmøter med NAV med mindre det er gyldig grunn for\n                                    fravær.Fastlege deltar pr telefon. Med hilsenNAVJon PersonAktuelle lover: Både folketrygdloven og arbeidsmiljøloven har bestemmelser om\n                                    sykefraværsoppfølging:Folketrygdloven § 8-4 og § 8-7Arbeidsmiljøloven § 4-6InformasjonØnsker du mer informasjon om regler og ordninger for oppfølging av\n                                    sykmeldte?www.nav.no og www.arbeidstilsynet.no Lokalt NAV-kontor",
+        "sporsmal": "Endret møtetidspunkt for dialogmøteGjelder Test Etternavn.Nav har tidligere innkalt til et dialogmøte angående din pasient. Møtet skulle vært\n                                    avholdt 03.09.2020 klokken 14:00.Dette møtet må flyttes, og vi foreslår nytt møtetidspunkt 22.09.2020 klokken 12:00.Møtested: SvingenHvis tidspunktet ikke\n                                    passer ber vi om en rask tilbakemelding.Vi gjør oppmerksom på at det er obligatorisk å delta i dialogmøter med Nav med mindre det er gyldig grunn for\n                                    fravær.Fastlege deltar pr telefon. Med hilsenNAVJon PersonAktuelle lover: Både folketrygdloven og arbeidsmiljøloven har bestemmelser om\n                                    sykefraværsoppfølging:Folketrygdloven § 8-4 og § 8-7Arbeidsmiljøloven § 4-6InformasjonØnsker du mer informasjon om regler og ordninger for oppfølging av\n                                    sykmeldte?www.nav.no og www.arbeidstilsynet.no Lokalt Nav-kontor",
         "dokIdForesp": "OD1812186729156",
         "rollerRelatertNotat": {
           "rolleNotat": {
@@ -105,5 +105,5 @@
   "pasientFnr": "3214141414",
   "pasientNavn": "Koronasen, Kovid",
   "navnSignerendeLege": "Sjefslege, Bossie",
-  "antallVedlegg" : 1
+  "antallVedlegg": 1
 }

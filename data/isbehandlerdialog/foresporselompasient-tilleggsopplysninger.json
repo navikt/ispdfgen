@@ -17,7 +17,7 @@
     {
       "type": "PARAGRAPH",
       "texts": [
-        "NAV trenger opplysninger fra deg vedrørende din pasient. Du kan utelate opplysninger som etter din vurdering faller utenfor formålet."
+        "Nav trenger opplysninger fra deg vedrørende din pasient. Du kan utelate opplysninger som etter din vurdering faller utenfor formålet."
       ]
     },
     {
@@ -36,7 +36,7 @@
       "type": "PARAGRAPH",
       "title": "Lovhjemmel",
       "texts": [
-        "Folketrygdloven § 21-4 andre ledd gir NAV rett til å innhente nødvendige opplysninger. Dette gjelder selv om opplysningene er taushetsbelagte, jf. § 21-4 sjette ledd."
+        "Folketrygdloven § 21-4 andre ledd gir Nav rett til å innhente nødvendige opplysninger. Dette gjelder selv om opplysningene er taushetsbelagte, jf. § 21-4 sjette ledd."
       ]
     },
     {
@@ -50,7 +50,7 @@
       "type": "PARAGRAPH",
       "texts": [
         "Med hilsen",
-        "NAV Staden",
+        "Nav Staden",
         "Siri Saksbehandler"
       ]
     }

@@ -24,7 +24,7 @@
       "texts": [
         "Arbeidstaker: Artig Trane",
         "Arbeidsgiver: Grønn Bamse",
-        "Fra NAV: Kari Saksbehandler"
+        "Fra Nav: Kari Saksbehandler"
       ]
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "type": "PARAGRAPH",
-      "title": "NAVs oppgave",
+      "title": "Navs oppgave",
       "texts": [
         "Cum epos favere, omnes medicinaes demitto nobilis, barbatus rectores. Est camerarius genetrix, cesaris."
       ]
@@ -83,7 +83,7 @@
     {
       "type": "HEADER_H2",
       "texts": [
-        "Dette informerte NAV om i møtet"
+        "Dette informerte Nav om i møtet"
       ]
     },
     {
@@ -107,14 +107,14 @@
       "key": "OKONOMISK_STOTTE",
       "title": "Hjelp til å søke om annen økonomisk støtte",
       "texts": [
-        "Klarer du ikke å komme tilbake i arbeid før den siste dagen du har rett til sykepenger, trenger vi et nytt dialogmøte. Da vil vi snakke sammen om hvordan du eventuelt kan søke om annen økonomisk støtte fra NAV."
+        "Klarer du ikke å komme tilbake i arbeid før den siste dagen du har rett til sykepenger, trenger vi et nytt dialogmøte. Da vil vi snakke sammen om hvordan du eventuelt kan søke om annen økonomisk støtte fra Nav."
       ]
     },
     {
       "type": "PARAGRAPH",
       "texts": [
         "Med hilsen",
-        "NAV Staden"
+        "Nav Staden"
       ]
     },
     {
