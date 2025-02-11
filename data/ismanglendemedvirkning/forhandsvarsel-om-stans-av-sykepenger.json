@@ -5,15 +5,23 @@
   "documentComponents": [
     {
       "type": "HEADER_H1",
-      "texts": ["Varsel om stans av sykepenger"]
+      "texts": [
+        "Varsel om stans av sykepenger"
+      ]
     },
     {
       "type": "PARAGRAPH",
-      "texts": ["Her kommer friteksten som veileder skriver inn."]
+      "texts": [
+        "Her kommer friteksten som veileder skriver inn."
+      ]
     },
     {
       "type": "PARAGRAPH",
-      "texts": ["Med vennlig hilsen", "Kari Saksbehandler", "NAV"]
+      "texts": [
+        "Med vennlig hilsen",
+        "Kari Saksbehandler",
+        "Nav"
+      ]
     }
   ]
 }

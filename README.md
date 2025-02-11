@@ -37,5 +37,5 @@ It is a known issue that pdfgen's output documents look different depending on w
 has `\r\n` or `\n` as line endings. Therefore, it is strongly recommended to configure Git to not convert newlines, as well as ensure that your editor ends its lines with LF (`\n`) and not CRLF (`\r\n`), as the former will accurately show what your
 templates will look like in production.
 
-### For NAV employees
+### For Nav employees
 We are available at the Slack channel #isyfo

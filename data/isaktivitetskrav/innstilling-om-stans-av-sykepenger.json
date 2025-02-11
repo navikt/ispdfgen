@@ -1,43 +1,39 @@
 {
-  "mottakerNavn": "Artig Trane",
-  "mottakerFodselsnummer": "12345678945",
   "datoSendt": "19. september 2023",
   "documentComponents": [
     {
       "type": "HEADER_H1",
       "texts": [
-        "Avlysning av dialogmøte"
+        "Nav har stanset sykepengene dine"
       ]
     },
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Sendt 9. mars 2022, kl. 12.00"
+        "Nav har stanset sykepengene dine fra og med 19. september 2023."
       ]
     },
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Gjelder Artig Trane, f.nr. 12345678945"
+        "For å få sykepenger har du plikt til å være i arbeidsrettet aktivitet innen 8 uker."
       ]
     },
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Nav har tidligere innkalt til dialogmøte som skulle vært avholdt 22.10.2021 klokka 12. Dette møtet er avlyst."
+        "Her kommer friteksten som veileder skriver inn."
       ]
     },
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Her kommer en fritekst skrevet av veilederen."
+        "Vi har brukt folketrygdloven § 8-8 andre ledd når vi har behandlet saken din."
       ]
     },
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Med hilsen",
-        "Nav Staden",
         "Kari Saksbehandler"
       ]
     }
