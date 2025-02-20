@@ -4,7 +4,13 @@
     {
       "type": "HEADER_H1",
       "texts": [
-        "Nav har stanset sykepengene dine"
+        "Vurdering av aktivitetskravet - Innstilling om stans"
+      ]
+    },
+    {
+      "type": "PARAGRAPH",
+      "texts": [
+        "Gjelder Artig Trane, f.nr. 12345678945"
       ]
     },
     {
@@ -34,7 +40,7 @@
     {
       "type": "PARAGRAPH",
       "texts": [
-        "Kari Saksbehandler"
+        "Vurdert av Kari Saksbehandler"
       ]
     }
   ]
