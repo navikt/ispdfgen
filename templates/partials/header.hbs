@@ -1,14 +1,13 @@
 <div class="header">
+    <div class="logo-container">
+        <img class="navlogo" alt="Nav-logo" src="{{ image "nav-logo-red.png" }}"/>
+    </div>
     <div class="mottaker-info-container">
         {{#if mottakerNavn}}
             <p class="mottaker">Til: {{ mottakerNavn }}</p>
         {{/if}}
         {{#if mottakerFodselsnummer}}
-            <p class="fodselsnummer">Fødselsnummer: {{ mottakerFodselsnummer }}</p>
+            <p class="fodselsnummer">Fødselsnummer: {{ mottakerFodselsnummer }} <span style="float: right">{{ datoSendt }}</span></p>
         {{/if}}
-    </div>
-    <div class="logo-container">
-        <img class="navlogo" alt="Nav-logo" src="{{ image "nav-logo-red.png" }}"/>
-        <p>{{ datoSendt }}</p>
     </div>
 </div>
