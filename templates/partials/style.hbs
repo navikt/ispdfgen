@@ -1,12 +1,12 @@
 <style>
     @page {
         size: A4 portrait;
-        margin: 46px;
+        margin: 64px;
     }
 
     * {
-        font-family: "Source Sans Pro", SourceSansPro, Source_Sans_Pro, ArialSystem, sans-serif;
-        color: #3E3832;
+        font-family: "Source Sans 3", SourceSans3, Source_Sans_3, ArialSystem, sans-serif;
+        color: #000000;
         font-style: normal;
     }
 
@@ -16,69 +16,82 @@
     }
 
     h1 {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 26px;
     }
 
     h2 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 16px;
+        line-height: 16px;
         margin-top: 48px;
+        margin-bottom: 6px;
     }
 
     h3 {
-        margin-bottom: 0;
         font-size: 14px;
         font-weight: bold;
+        line-height: 16px;
+        margin-bottom: 6px;
     }
 
     p {
         margin-top: 0;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 16px;
         letter-spacing: 0.2px;
     }
 
     li {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     a {
         display: inline;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 16px;
         letter-spacing: 0.2px;
-        color: #3E3832;
+        color: #000000;
     }
 
     .header {
-        display: table;
         width: 100%;
         margin-bottom: 50px;
     }
 
-    .mottaker-info-container {
-        display: table-cell;
-        vertical-align: baseline;
-    }
-
-    .mottaker {
-        margin-bottom: 0;
-    }
-
-    .fodselsnummer {
-    }
-
-    .logo-container {
-        display: table-cell;
-        vertical-align: baseline;
-        text-align: right;
-    }
-
     .navlogo {
-        width: 48px;
+        width: 64px;
+        display: block;
+        margin-left: 0;
+        margin-bottom: 48px;
     }
 
+    .mottaker-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 0.5em;
+        border-spacing: 0;
+    }
+
+    .mottaker-table td:nth-child(1),
+    .mottaker-table td:nth-child(2) {
+        padding-left: 0;
+        padding-right: 8px;
+        border: none;
+        width: 1%;
+        white-space: nowrap;
+    }
+
+    .mottaker-navn {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .mottaker-dato {
+        text-align: right;
+        font-size: 12px;
+        white-space: nowrap;
+    }
 </style>
