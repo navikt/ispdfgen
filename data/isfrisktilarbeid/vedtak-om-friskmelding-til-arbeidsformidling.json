@@ -1,27 +1,235 @@
 {
   "mottakerNavn": "Artig Trane",
   "mottakerFodselsnummer": "12345678945",
-  "datoSendt": "19. september 2023",
+  "datoSendt": "4. juni 2023",
   "documentComponents": [
     {
+      "key": null,
       "type": "HEADER_H1",
       "texts": [
         "Vedtak om friskmelding til arbeidsformidling"
-      ]
+      ],
+      "title": null
     },
     {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Du har fått innvilget friskmelding til arbeidsformidling"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
       "type": "PARAGRAPH",
       "texts": [
-        "Her kommer friteksten som veileder skriver inn."
-      ]
+        "Du oppfyller vilkårene for friskmelding til arbeidsformidling og kan få sykepenger fra Nav mens du ser etter ny jobb."
+      ],
+      "title": null
     },
     {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vedtaket gjelder for perioden: 11. juni 2025 - 2. september 2025."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Begrunnelse for vedtaket"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du er for tiden sykmeldt og alle muligheter er prøvd for at du kan komme tilbake til arbeidsplassen din. Du har valgt å avslutte denne jobben for å benytte deg av ordningen friskmelding til arbeidsformidling."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Helsen din er slik at du kan komme tilbake i arbeid, men ikke til den jobben du har vært sykmeldt fra. Nå har du selv valgt å avslutte jobben, og benytte deg av ordningen friskmelding til arbeidsformidling. Dette vedtaket er gjort etter folketrygdloven § 8-5."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Sykmelding fra legen"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Nav har ikke delt informasjonen om vedtaket med legen din. Du trenger ikke sykmelding i perioden vedtaket gjelder for, med mindre du blir syk underveis. Da må du ta kontakt med legen din."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Hva du må gjøre for å få sykepenger"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "For å få sykepenger gjennom friskmelding til arbeidsformidling må du være registrert som arbeidssøker hos Nav og søke om sykepenger hver 14. dag. Du kan da få sykepenger i opptil 12 uker mens du søker etter ny jobb. Du vil få beskjed fra oss når søknaden er klar til å fylles ut. Hvis du ikke lenger ønsker å motta sykepenger fra Nav, må du gi beskjed om det i søknaden."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Hvis du får en ny jobb underveis"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du får en ny jobb underveis hvor du tjener like mye eller mer enn sykepengene du får fra Nav, eller du begynner å jobbe mer enn 80 % av det du gjorde før du ble sykmeldt, vil du ikke ha rett på sykepenger lenger. Da stanser Nav utbetalingen din."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Hvis du ikke finner ny jobb"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du ikke har fått jobb i løpet av perioden vedtaket gjelder for, kan det være aktuelt for deg å søke om dagpenger. Husk å sende søknaden før sykepengeperioden er slutt.",
+        "Du kan lese mer om dagpenger på: nav.no/dagpenger#arbeidsledig"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Hvis situasjonen din endrer seg"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Endringer i livssituasjonen din kan påvirke retten din til sykepenger. Dersom du gir mangelfulle eller feilaktige opplysninger, kan det føre til at du må betale tilbake penger."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Les mer om dette på: nav.no/endringer."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Har du spørsmål?"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du har spørsmål, kan du kontakte oss via: nav.no/kontaktoss/endringer."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Dine rettigheter"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H3",
+      "texts": [
+        "Rett til innsyn:"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du kan se opplysninger i saken ved å logge deg inn på nav.no eller kontakte oss på nav.no/kontaktoss."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H3",
+      "texts": [
+        "Rett til å klage:"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du ikke er enig i vedtaket, kan du klage innen seks uker fra du mottok dette brevet."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Les mer om hvordan du klager her:"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "BULLET_POINTS",
+      "texts": [
+        "nav.no/klagerettigheter",
+        "nav.no/klage#sykepenger"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
       "type": "PARAGRAPH",
       "texts": [
         "Med vennlig hilsen",
-        "Kari Saksbehandler",
+        "F_Z994248 E_Z994248",
         "Nav"
-      ]
+      ],
+      "title": null
     }
   ]
 }
