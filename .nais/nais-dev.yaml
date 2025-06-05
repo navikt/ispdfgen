@@ -35,6 +35,13 @@ spec:
       memory: 100Mi
   ingresses:
     - "https://ispdfgen.intern.dev.nav.no"
+  observability:
+    autoInstrumentation:
+      enabled: true
+      runtime: java
+    logging:
+      destinations:
+        - id: elastic
   accessPolicy:
     inbound:
       rules:

@@ -33,6 +33,13 @@ spec:
     requests:
       cpu: 50m
       memory: 100Mi
+  observability:
+    autoInstrumentation:
+      enabled: true
+      runtime: java
+    logging:
+      destinations:
+        - id: elastic
   accessPolicy:
     inbound:
       rules:
