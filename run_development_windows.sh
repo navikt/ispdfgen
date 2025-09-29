@@ -2,7 +2,7 @@
 
 CURRENT_PATH=$(pwd)
 
-winpty docker pull ghcr.io/navikt/pdfgen:2.0.81
+winpty docker pull ghcr.io/navikt/pdfgen:2.0.94
 winpty docker run \
         -v "/$CURRENT_PATH/templates:/app/templates" \
         -v "/$CURRENT_PATH/fonts:/app/fonts" \
