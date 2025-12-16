@@ -4,6 +4,7 @@ Repository with templates for generating PDF's in iSyfo domain.
 ## Technologies & Tools
 
 * [pdfgen](https://github.com/navikt/pdfgen)
+* Docker
 
 #### Creating a docker image
 Creating a docker image: `docker build -t ispdfgen .`
