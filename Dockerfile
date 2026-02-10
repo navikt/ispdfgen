@@ -1,4 +1,4 @@
-FROM ghcr.io/navikt/pdfgen:2.0.101
+FROM ghcr.io/navikt/pdfgen:2.0.107
 
 ENV JDK_JAVA_OPTIONS="-XX:MaxRAMPercentage=75 -XX:InitialRAMPercentage=75 -Dlogback.configurationFile=logback-remote.xml"
 # use the following two lines to enable testing in dev-gcp
