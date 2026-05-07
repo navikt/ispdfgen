@@ -106,7 +106,7 @@
             left: 560px;
         }
     </style>
-    <title>{{#eq validationResult.status "INVALID" }}AVVIST {{/eq}}Legeerklæring for {{ pasient.fornavn }}{{#if pasient.mellomnavn }} {{pasient.mellomnavn}}{{/if}} {{pasient.etternavn}} ({{ pasient.fnr }}) </title>
+    <title>{{#eq validationResult.status "INVALID" }}AVVIST {{/eq}}Legeerklæring for {{ legeerklaering.pasient.fornavn }}{{#if legeerklaering.pasient.mellomnavn }} {{legeerklaering.pasient.mellomnavn}}{{/if}} {{legeerklaering.pasient.etternavn}} ({{ legeerklaering.pasient.fnr }}) </title>
 </head>
 <body>
 <img class="header-ikon" alt="NAV logo"
