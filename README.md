@@ -1,5 +1,5 @@
 # ispdfgen
-Repository with templates for generating PDF's in iSyfo domain.
+Repository with templates for generating PDF's in iSyfo domain. 
 
 ## Technologies & Tools
 
