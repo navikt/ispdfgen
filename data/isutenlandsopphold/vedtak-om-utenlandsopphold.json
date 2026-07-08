@@ -1,0 +1,186 @@
+{
+  "mottakerNavn": "Artig Trane",
+  "mottakerFodselsnummer": "12345678945",
+  "datoSendt": "12. mai 2025",
+  "documentComponents": [
+    {
+      "key": null,
+      "type": "HEADER_H1",
+      "texts": [
+        "Vedtak om utenlandsopphold"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Du har fått godkjent sykepenger under utenlandsopphold"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi viser til din søknad av 12. mai 2025 om å beholde sykepengene under opphold i utlandet. Søknaden din er godkjent og du får beholde sykepengene dine ved opphold i utlandet i perioden 11. juni 2025 til og med 20. juni 2025."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Begrunnelse for vedtaket"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du er for tiden sykmeldt og har søkt om å beholde sykepengene på reise utenfor EU/EØS. Du kan få utbetalt sykepenger under utenlandsopphold utenfor EU/EØS eller andre områder der trygdeforordningen gjelder i inntil fire uker (28 kalenderdager) i løpet av en tolvmånedersperiode."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du bekrefter i søknaden at det er avklart med arbeidsgiver og sykmelder at reisen ikke vil være til hinder for planlagt aktivitet og behandling. Vi vurderer videre at oppholdet ikke vil hindre Navs kontroll og oppfølging. Du får derfor innvilget din søknad om å beholde sykepenger ved opphold i utlandet i perioden 11. juni 2025 til og med 20. juni 2025."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Dette vedtaket er gjort etter folketrygdloven § 8-9 tredje ledd."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Dette må du være oppmerksom på"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Det er viktig at du er oppmerksom på at du har fått godkjent å beholde sykepenger under utenlandsopphold i perioden 11. juni 2025 til og med 20. juni 2025. Dersom du oppholder deg utenfor EU/EØS eller andre områder der trygdeforordningen gjelder lengre enn dette, kan det få betydning for din videre rett til sykepenger."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Hvis situasjonen din endrer seg"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Endringer i situasjonen din kan påvirke retten din til sykepenger. Dersom du gir mangelfulle eller feilaktige opplysninger, kan det føre til at du må betale tilbake penger."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Les mer om dette på: nav.no/endringer."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Har du spørsmål"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du har spørsmål kan du kontakte oss via: nav.no/kontaktoss eller telefon 55 55 33 33."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Dine rettigheter"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H3",
+      "texts": [
+        "Rett til innsyn"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du kan se opplysninger i saken ved å logge deg inn på nav.no. Du kan også kontakte oss på nav.no/kontaktoss eller telefon 55 55 33 33."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H3",
+      "texts": [
+        "Rett til å klage"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du ikke er enig i vedtaket, kan du klage innen seks uker fra du mottok dette brevet."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Les mer om hvordan du klager her:"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "BULLET_POINTS",
+      "texts": [
+        "nav.no/klagerettigheter",
+        "nav.no/klage#sykepenger"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med vennlig hilsen",
+        "F_Z994248 E_Z994248",
+        "Nav"
+      ],
+      "title": null
+    }
+  ]
+}
