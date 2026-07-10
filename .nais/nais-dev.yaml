@@ -53,4 +53,5 @@ spec:
         - application: isbehandlerdialog
         - application: ismanglendemedvirkning
         - application: isoppfolgingsplan
+        - application: isutenlandsopphold
         - application: padm2
