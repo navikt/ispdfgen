@@ -23,16 +23,23 @@ jobs:
     outputs:
       image: ${{ steps.docker-build-push.outputs.image }}
 
-  nais-deploy:
+  # TODO: prod deploy is temporarily disabled while pdfgen/pdfgen-core are being inlined
+  # over a series of PRs (see https://github.com/navikt/pdfgen). Switch back to
+  # navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@master (dev + prod) once the
+  # migration is complete and verified in dev-gcp.
+  nais-deploy-dev:
     needs: build
+    name: Deploy til dev
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
-    uses: navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@master
-    with:
-      image: ${{ needs.build.outputs.image }}
-      dev-cluster: dev-gcp
-      prod-cluster: prod-gcp
-      dev-nais-template: .nais/nais-dev.yaml
-      prod-nais-template: .nais/nais-prod.yaml
-    secrets: inherit
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      - name: Deploy til dev
+        uses: nais/deploy/actions/deploy@v2
+        env:
+          CLUSTER: dev-gcp
+          IMAGE: ${{ needs.build.outputs.image }}
+          RESOURCE: .nais/nais-dev.yaml
