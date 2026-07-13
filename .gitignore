@@ -1,2 +1,15 @@
 .idea/
 *.iml
+.kotlin/
+
+# Package Files #
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Gradle files
+out/
+build/
+.gradle/
+
+# Generated sources
+src/generated
