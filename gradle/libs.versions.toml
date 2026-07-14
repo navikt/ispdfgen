@@ -13,7 +13,6 @@ logstash-logback-encoder = "9.0"
 jaxb-runtime = "4.0.8"
 jaxb-api = "2.3.1"
 jsoup = "1.22.2"
-kotlin-logging = "8.0.02"
 
 # Transitive vulnerability pins
 rhino = "1.9.1"
@@ -42,7 +41,7 @@ verapdf-validation-model = { module = "org.verapdf:validation-model-jakarta", ve
 rhino = { module = "org.mozilla:rhino", version.ref = "rhino" }
 commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
 
-kotlin-logging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlin-logging" }
+
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 logstash-logback-encoder = { module = "net.logstash.logback:logstash-logback-encoder", version.ref = "logstash-logback-encoder" }
 

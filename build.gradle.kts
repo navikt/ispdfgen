@@ -53,7 +53,6 @@ dependencies {
         }
     }
 
-    implementation(libs.kotlin.logging)
     implementation(libs.logback.classic)
     implementation(libs.logstash.logback.encoder)
 
