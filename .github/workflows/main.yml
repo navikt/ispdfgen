@@ -42,4 +42,4 @@ jobs:
         env:
           CLUSTER: dev-gcp
           IMAGE: ${{ needs.build.outputs.image }}
-          RESOURCE: .nais/nais-dev.yaml
+          RESOURCE: .nais/naiserator-dev.yaml

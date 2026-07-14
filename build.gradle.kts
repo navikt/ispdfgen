@@ -43,8 +43,7 @@ dependencies {
     implementation(libs.jaxb.runtime)
     implementation(libs.jsoup)
 
-    implementation(libs.prometheus.simpleclient.common)
-    implementation(libs.prometheus.simpleclient.hotspot)
+    implementation(libs.micrometer.registry.prometheus)
 
     implementation(libs.verapdf.validation.model)
     constraints {
