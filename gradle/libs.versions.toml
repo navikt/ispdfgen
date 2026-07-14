@@ -1,0 +1,56 @@
+[versions]
+kotlin = "2.4.0"
+shadow = "9.4.3"
+ktlint = "14.2.0"
+handlebars = "4.3.1"
+jackson = "2.21.3"
+openhtmltopdf = "1.1.37"
+prometheus = "0.16.0"
+junit-jupiter = "6.0.3"
+verapdf = "1.30.1"
+logback = "1.5.37"
+logstash-logback-encoder = "9.0"
+jaxb-runtime = "4.0.8"
+jaxb-api = "2.3.1"
+jsoup = "1.22.2"
+kotlin-logging = "8.0.02"
+
+# Transitive vulnerability pins
+rhino = "1.9.1"
+commons-io = "2.22.0"
+
+[libraries]
+handlebars = { module = "com.github.jknack:handlebars", version.ref = "handlebars" }
+handlebars-jackson2 = { module = "com.github.jknack:handlebars-jackson2", version.ref = "handlebars" }
+
+openhtmltopdf-pdfbox = { module = "io.github.openhtmltopdf:openhtmltopdf-pdfbox", version.ref = "openhtmltopdf" }
+openhtmltopdf-slf4j = { module = "io.github.openhtmltopdf:openhtmltopdf-slf4j", version.ref = "openhtmltopdf" }
+openhtmltopdf-svg-support = { module = "io.github.openhtmltopdf:openhtmltopdf-svg-support", version.ref = "openhtmltopdf" }
+
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+
+jaxb-api = { module = "javax.xml.bind:jaxb-api", version.ref = "jaxb-api" }
+jaxb-runtime = { module = "org.glassfish.jaxb:jaxb-runtime", version.ref = "jaxb-runtime" }
+jsoup = { module = "org.jsoup:jsoup", version.ref = "jsoup" }
+
+prometheus-simpleclient-common = { module = "io.prometheus:simpleclient_common", version.ref = "prometheus" }
+prometheus-simpleclient-hotspot = { module = "io.prometheus:simpleclient_hotspot", version.ref = "prometheus" }
+
+verapdf-validation-model = { module = "org.verapdf:validation-model-jakarta", version.ref = "verapdf" }
+rhino = { module = "org.mozilla:rhino", version.ref = "rhino" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
+
+kotlin-logging = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "kotlin-logging" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+logstash-logback-encoder = { module = "net.logstash.logback:logstash-logback-encoder", version.ref = "logstash-logback-encoder" }
+
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
+junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit-jupiter" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
