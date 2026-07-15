@@ -5,16 +5,20 @@ import io.ktor.http.*
 import io.ktor.http.content.*
 import io.ktor.serialization.jackson.*
 import io.ktor.server.application.*
+import io.ktor.server.metrics.micrometer.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.plugins.statuspages.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import io.micrometer.core.instrument.distribution.DistributionStatisticConfig
 import no.nav.syfo.pdfgen.Environment
 import no.nav.syfo.pdfgen.api.endpoints.registerMetricApi
 import no.nav.syfo.pdfgen.api.endpoints.registerPodApi
 import no.nav.syfo.pdfgen.api.pdf.registerGeneratePdfApi
 import no.nav.syfo.pdfgen.application.ApplicationState
+import no.nav.syfo.pdfgen.metrics.METRICS_REGISTRY
+import java.time.Duration
 
 fun Application.apiModule(
     environment: Environment,
@@ -23,6 +27,7 @@ fun Application.apiModule(
 ) {
     installContentNegotiation()
     installStatusPages(templates)
+    installMetrics()
 
     routing {
         registerPodApi(applicationState)
@@ -36,6 +41,18 @@ fun Application.apiModule(
 fun Application.installContentNegotiation() {
     install(ContentNegotiation) {
         jackson {}
+    }
+}
+
+fun Application.installMetrics() {
+    install(MicrometerMetrics) {
+        registry = METRICS_REGISTRY
+        distributionStatisticConfig =
+            DistributionStatisticConfig
+                .Builder()
+                .percentilesHistogram(true)
+                .maximumExpectedValue(Duration.ofSeconds(20).toNanos().toDouble())
+                .build()
     }
 }
 

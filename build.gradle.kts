@@ -21,6 +21,7 @@ dependencies {
     implementation(ktorLibs.server.netty)
     implementation(ktorLibs.server.contentNegotiation)
     implementation(ktorLibs.server.statusPages)
+    implementation(ktorLibs.server.metrics.micrometer)
     implementation(ktorLibs.serialization.jackson)
 
     implementation(libs.handlebars)
