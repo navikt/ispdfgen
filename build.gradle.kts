@@ -25,7 +25,7 @@ dependencies {
     implementation(ktorLibs.serialization.jackson)
 
     implementation(libs.handlebars)
-    implementation(libs.handlebars.jackson2)
+    implementation(libs.handlebars.jackson)
 
     implementation(libs.openhtmltopdf.pdfbox)
     implementation(libs.openhtmltopdf.slf4j)
@@ -39,6 +39,11 @@ dependencies {
     implementation(libs.jackson.core)
     implementation(libs.jackson.module.kotlin)
     implementation(libs.jackson.datatype.jsr310)
+    constraints {
+        implementation(libs.tools.jackson.databind) {
+            because("Due to vulnerabilities")
+        }
+    }
 
     implementation(libs.jaxb.api)
     implementation(libs.jaxb.runtime)

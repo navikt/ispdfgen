@@ -2,8 +2,8 @@ package no.nav.syfo.pdfgen.core.pdf
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.github.jknack.handlebars.Context
-import com.github.jknack.handlebars.JsonNodeValueResolver
 import com.github.jknack.handlebars.context.MapValueResolver
+import com.github.jknack.handlebars.jackson.JsonNodeValueResolver
 import no.nav.syfo.pdfgen.core.PDFGenCore
 import no.nav.syfo.pdfgen.core.objectMapper
 import no.nav.syfo.pdfgen.metrics.HANDLEBARS_RENDERING_TIMER
