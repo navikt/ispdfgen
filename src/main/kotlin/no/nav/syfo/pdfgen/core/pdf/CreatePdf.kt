@@ -6,7 +6,7 @@ import com.openhtmltopdf.pdfboxout.PdfRendererBuilder
 import com.openhtmltopdf.svgsupport.BatikSVGDrawer
 import no.nav.syfo.pdfgen.core.PDFGenCore
 import org.apache.fontbox.ttf.TTFParser
-import org.apache.pdfbox.io.RandomAccessReadBufferedFile
+import org.apache.pdfbox.io.RandomAccessReadBuffer
 import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.pdmodel.font.PDType0Font
 import org.slf4j.LoggerFactory
@@ -39,8 +39,8 @@ fun createPDFA(html: String): ByteArray {
                             val ttf =
                                 TTFParser()
                                     .parse(
-                                        RandomAccessReadBufferedFile(
-                                            "${PDFGenCore.environment.fontsRoot.path}/${font.path}",
+                                        RandomAccessReadBuffer(
+                                            PDFGenCore.environment.fontBytesByPath.getValue(font.path),
                                         ),
                                     ).also { it.isEnableGsub = false }
                             useFont(

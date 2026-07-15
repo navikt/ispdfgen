@@ -31,6 +31,8 @@ class Environment(
     val images: Map<String, String> = loadImages(resourcesRoot)
     val resources: Map<String, ByteArray> = loadResources(resourcesRoot)
     val fonts: List<FontMetadata> = objectMapper.readValue(fontsRoot.readAllBytes("config.json"))
+    val fontBytesByPath: Map<String, ByteArray> =
+        fonts.associate { it.path to fontsRoot.readAllBytes(it.path) }
     val templates = loadTemplates(templateRoot, additionalHandlebarHelpers)
 
     override fun equals(other: Any?): Boolean {
