@@ -15,7 +15,7 @@ fun Routing.registerPodApi(applicationState: ApplicationState) {
         if (applicationState.alive) {
             call.respondText("I'm alive")
         } else {
-            call.respondText("I'm dead x_x", status = HttpStatusCode.ServiceUnavailable)
+            call.respondText("I'm dead x_x", status = HttpStatusCode.InternalServerError)
         }
     }
     get(POD_READINESS_PATH) {
@@ -24,7 +24,7 @@ fun Routing.registerPodApi(applicationState: ApplicationState) {
         } else {
             call.respondText(
                 "Please wait! I'm not ready :(",
-                status = HttpStatusCode.InternalServerError,
+                status = HttpStatusCode.ServiceUnavailable,
             )
         }
     }
