@@ -14,19 +14,22 @@ spec:
     cpuThresholdPercentage: 70
   liveness:
     path: /internal/is_alive
-    timeout: 1
-    initialDelay: 5
     periodSeconds: 5
-    failureThreshold: 30
+    timeout: 5
+    failureThreshold: 3
   readiness:
     path: /internal/is_ready
-    timeout: 1
-    initialDelay: 5
     periodSeconds: 5
+    timeout: 5
+    failureThreshold: 3
+  startup:
+    path: /internal/is_ready
+    periodSeconds: 5
+    timeout: 5
     failureThreshold: 30
   prometheus:
     enabled: true
-    path: /prometheus
+    path: /internal/metrics
   resources:
     limits:
       memory: 500Mi
@@ -55,3 +58,8 @@ spec:
         - application: isoppfolgingsplan
         - application: isutenlandsopphold
         - application: padm2
+  env:
+    - name: DISABLE_PDF_GET
+      value: "false"
+    - name: DISABLE_PDFA_VALIDATION
+      value: "false"

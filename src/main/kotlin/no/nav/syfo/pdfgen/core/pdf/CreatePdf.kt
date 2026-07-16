@@ -1,12 +1,11 @@
 package no.nav.syfo.pdfgen.core.pdf
 
-import com.fasterxml.jackson.databind.JsonNode
 import com.openhtmltopdf.pdfboxout.PDFontSupplier
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder
 import com.openhtmltopdf.svgsupport.BatikSVGDrawer
 import no.nav.syfo.pdfgen.core.PDFGenCore
 import org.apache.fontbox.ttf.TTFParser
-import org.apache.pdfbox.io.RandomAccessReadBufferedFile
+import org.apache.pdfbox.io.RandomAccessReadBuffer
 import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.pdmodel.font.PDType0Font
 import org.slf4j.LoggerFactory
@@ -15,51 +14,54 @@ import org.verapdf.pdfa.flavours.PDFAFlavour
 import org.verapdf.pdfa.results.TestAssertion
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
+import kotlin.system.measureTimeMillis
 
 private val log = LoggerFactory.getLogger("no.nav.syfo.pdfgen.core.pdf.CreatePdf")
 
 fun createPDFA(
-    template: String,
-    directoryName: String,
-    jsonPayload: JsonNode? = null,
-): ByteArray? {
-    val html =
-        jsonPayload?.let { createHtml(template, directoryName, it) }
-            ?: createHtmlFromTemplateData(template, directoryName)
-    return html?.let { createPDFA(it) }
-}
-
-fun createPDFA(html: String): ByteArray {
-    val pdf =
-        ByteArrayOutputStream()
-            .apply {
-                PdfRendererBuilder()
+    html: String,
+    disablePDFAValidation: Boolean,
+): ByteArray {
+    lateinit var pdf: ByteArray
+    val renderTimeMs =
+        measureTimeMillis {
+            pdf =
+                ByteArrayOutputStream()
                     .apply {
-                        for (font in PDFGenCore.environment.fonts) {
-                            val ttf =
-                                TTFParser()
-                                    .parse(
-                                        RandomAccessReadBufferedFile(
-                                            "${PDFGenCore.environment.fontsRoot.path}/${font.path}",
-                                        ),
-                                    ).also { it.isEnableGsub = false }
-                            useFont(
-                                PDFontSupplier(PDType0Font.load(PDDocument(), ttf, font.subset)),
-                                font.family,
-                                font.weight,
-                                font.style,
-                                font.subset,
-                            )
-                        }
-                    }.usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_2_A)
-                    .usePdfUaAccessibility(true)
-                    .useColorProfile(PDFGenCore.environment.colorProfile)
-                    .useSVGDrawer(BatikSVGDrawer())
-                    .withHtmlContent(html, null)
-                    .toStream(this)
-                    .run()
-            }.toByteArray()
-    require(verifyCompliance(pdf)) { "Non-compliant PDF/A :(" }
+                        PdfRendererBuilder()
+                            .apply {
+                                for (font in PDFGenCore.environment.fonts) {
+                                    val ttf =
+                                        TTFParser()
+                                            .parse(
+                                                RandomAccessReadBuffer(
+                                                    PDFGenCore.environment.fontBytesByPath.getValue(font.path),
+                                                ),
+                                            ).also { it.isEnableGsub = false }
+                                    useFont(
+                                        PDFontSupplier(PDType0Font.load(PDDocument(), ttf, font.subset)),
+                                        font.family,
+                                        font.weight,
+                                        font.style,
+                                        font.subset,
+                                    )
+                                }
+                            }.usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_2_A)
+                            .usePdfUaAccessibility(true)
+                            .useColorProfile(PDFGenCore.environment.colorProfile)
+                            .useSVGDrawer(BatikSVGDrawer())
+                            .withHtmlContent(html, null)
+                            .toStream(this)
+                            .run()
+                    }.toByteArray()
+        }
+    log.info("PDF render took {}ms", renderTimeMs)
+    if (!disablePDFAValidation) {
+        var compliant = false
+        val verifyTimeMs = measureTimeMillis { compliant = verifyCompliance(pdf) }
+        log.info("PDF/A verification took {}ms", verifyTimeMs)
+        require(compliant) { "Non-compliant PDF/A :(" }
+    }
     return pdf
 }
 

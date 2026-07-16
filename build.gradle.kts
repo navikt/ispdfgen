@@ -21,10 +21,11 @@ dependencies {
     implementation(ktorLibs.server.netty)
     implementation(ktorLibs.server.contentNegotiation)
     implementation(ktorLibs.server.statusPages)
+    implementation(ktorLibs.server.metrics.micrometer)
     implementation(ktorLibs.serialization.jackson)
 
     implementation(libs.handlebars)
-    implementation(libs.handlebars.jackson2)
+    implementation(libs.handlebars.jackson)
 
     implementation(libs.openhtmltopdf.pdfbox)
     implementation(libs.openhtmltopdf.slf4j)
@@ -38,13 +39,17 @@ dependencies {
     implementation(libs.jackson.core)
     implementation(libs.jackson.module.kotlin)
     implementation(libs.jackson.datatype.jsr310)
+    constraints {
+        implementation(libs.tools.jackson.databind) {
+            because("Due to vulnerabilities")
+        }
+    }
 
     implementation(libs.jaxb.api)
     implementation(libs.jaxb.runtime)
     implementation(libs.jsoup)
 
-    implementation(libs.prometheus.simpleclient.common)
-    implementation(libs.prometheus.simpleclient.hotspot)
+    implementation(libs.micrometer.registry.prometheus)
 
     implementation(libs.verapdf.validation.model)
     constraints {

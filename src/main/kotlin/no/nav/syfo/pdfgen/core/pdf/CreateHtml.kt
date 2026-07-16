@@ -2,11 +2,11 @@ package no.nav.syfo.pdfgen.core.pdf
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.github.jknack.handlebars.Context
-import com.github.jknack.handlebars.JsonNodeValueResolver
 import com.github.jknack.handlebars.context.MapValueResolver
+import com.github.jknack.handlebars.jackson.JsonNodeValueResolver
 import no.nav.syfo.pdfgen.core.PDFGenCore
-import no.nav.syfo.pdfgen.core.metrics.HANDLEBARS_RENDERING_SUMMARY
 import no.nav.syfo.pdfgen.core.objectMapper
+import no.nav.syfo.pdfgen.metrics.HANDLEBARS_RENDERING_TIMER
 import java.nio.file.Files
 
 fun createHtml(
@@ -28,18 +28,16 @@ fun render(
     template: String,
     jsonNode: JsonNode,
 ): String? =
-    HANDLEBARS_RENDERING_SUMMARY
-        .startTimer()
-        .use {
-            PDFGenCore.environment.templates[directoryName to template]?.apply(
-                Context
-                    .newBuilder(jsonNode)
-                    .resolver(
-                        JsonNodeValueResolver.INSTANCE,
-                        MapValueResolver.INSTANCE,
-                    ).build(),
-            )
-        }
+    HANDLEBARS_RENDERING_TIMER.record<String?> {
+        PDFGenCore.environment.templates[directoryName to template]?.apply(
+            Context
+                .newBuilder(jsonNode)
+                .resolver(
+                    JsonNodeValueResolver.INSTANCE,
+                    MapValueResolver.INSTANCE,
+                ).build(),
+        )
+    }
 
 private fun hotTemplateData(
     applicationName: String,
