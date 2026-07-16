@@ -1,6 +1,5 @@
 package no.nav.syfo.pdfgen.core.pdf
 
-import com.fasterxml.jackson.databind.JsonNode
 import com.openhtmltopdf.pdfboxout.PDFontSupplier
 import com.openhtmltopdf.pdfboxout.PdfRendererBuilder
 import com.openhtmltopdf.svgsupport.BatikSVGDrawer
@@ -20,17 +19,9 @@ import kotlin.system.measureTimeMillis
 private val log = LoggerFactory.getLogger("no.nav.syfo.pdfgen.core.pdf.CreatePdf")
 
 fun createPDFA(
-    template: String,
-    directoryName: String,
-    jsonPayload: JsonNode? = null,
-): ByteArray? {
-    val html =
-        jsonPayload?.let { createHtml(template, directoryName, it) }
-            ?: createHtmlFromTemplateData(template, directoryName)
-    return html?.let { createPDFA(it) }
-}
-
-fun createPDFA(html: String): ByteArray {
+    html: String,
+    disablePDFAValidation: Boolean,
+): ByteArray {
     lateinit var pdf: ByteArray
     val renderTimeMs =
         measureTimeMillis {
@@ -64,10 +55,13 @@ fun createPDFA(html: String): ByteArray {
                             .run()
                     }.toByteArray()
         }
-    var compliant = false
-    val verifyTimeMs = measureTimeMillis { compliant = verifyCompliance(pdf) }
-    log.info("PDF render took {}ms, PDF/A verification took {}ms", renderTimeMs, verifyTimeMs)
-    require(compliant) { "Non-compliant PDF/A :(" }
+    log.info("PDF render took {}ms", renderTimeMs)
+    if (!disablePDFAValidation) {
+        var compliant = false
+        val verifyTimeMs = measureTimeMillis { compliant = verifyCompliance(pdf) }
+        log.info("PDF/A verification took {}ms", verifyTimeMs)
+        require(compliant) { "Non-compliant PDF/A :(" }
+    }
     return pdf
 }
 

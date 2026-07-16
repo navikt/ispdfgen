@@ -3,10 +3,8 @@ WORKDIR /app
 COPY build/libs/app.jar app.jar
 ENV JDK_JAVA_OPTIONS="-XX:MaxRAMPercentage=75 -Dlogback.configurationFile=logback.xml"
 ENV TZ="Europe/Oslo"
-# use the following two lines to enable testing in dev-gcp
-# ENV DISABLE_PDF_GET=false
-# COPY data /app/data
 
+COPY data /app/data
 COPY templates /app/templates
 COPY fonts /app/fonts
 COPY resources /app/resources

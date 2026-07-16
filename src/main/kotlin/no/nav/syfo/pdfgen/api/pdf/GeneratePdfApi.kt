@@ -19,7 +19,7 @@ fun Route.registerGeneratePdfApi(env: Environment = Environment()) {
             val applicationName = call.parameters["applicationName"]!!
             createHtmlFromTemplateData(template, applicationName)?.let { document ->
                 call.response.header("Content-Type", ContentType.Application.Pdf.toString())
-                call.respond(createPDFA(document))
+                call.respond(createPDFA(document, env.disablePdfAValidation))
             }
                 ?: call.respondText(
                     "Template or application not found",
@@ -35,7 +35,7 @@ fun Route.registerGeneratePdfApi(env: Environment = Environment()) {
 
         createHtml(template, applicationName, jsonNode)?.let { document ->
             call.response.header("Content-Type", ContentType.Application.Pdf.toString())
-            call.respond(createPDFA(document))
+            call.respond(createPDFA(document, env.disablePdfAValidation))
             call.application.log.info(
                 "Done generating PDF in ${System.currentTimeMillis() - startTime}ms",
             )
