@@ -34,26 +34,6 @@ class Environment(
     val fontBytesByPath: Map<String, ByteArray> =
         fonts.associate { it.path to fontsRoot.readAllBytes(it.path) }
     val templates = loadTemplates(templateRoot, additionalHandlebarHelpers)
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as Environment
-
-        return colorProfile.contentEquals(other.colorProfile)
-    }
-
-    override fun hashCode(): Int = colorProfile.contentHashCode()
-
-    fun copy(): Environment =
-        Environment(
-            additionalHandlebarHelpers = additionalHandlebarHelpers,
-            templateRoot = templateRoot,
-            resourcesRoot = resourcesRoot,
-            fontsRoot = fontsRoot,
-            dataRoot = dataRoot,
-        )
 }
 
 data class PDFGenResource(

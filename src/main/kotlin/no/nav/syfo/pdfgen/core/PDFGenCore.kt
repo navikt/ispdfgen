@@ -22,9 +22,5 @@ class PDFGenCore {
                 coreEnvironment.updateAndGet { current ->
                     current ?: Environment()
                 }!!
-
-        fun reloadEnvironment() {
-            coreEnvironment.updateAndGet { currentEnv -> currentEnv?.copy() ?: Environment() }
-        }
     }
 }
