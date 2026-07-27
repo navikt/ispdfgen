@@ -5,9 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.JsonNodeFactory
 import com.github.jknack.handlebars.Context
 import com.github.jknack.handlebars.Handlebars
-import com.github.jknack.handlebars.JsonNodeValueResolver
 import com.github.jknack.handlebars.context.MapValueResolver
 import com.github.jknack.handlebars.io.ClassPathTemplateLoader
+import com.github.jknack.handlebars.jackson.JsonNodeValueResolver
 import no.nav.syfo.pdfgen.core.Environment
 import no.nav.syfo.pdfgen.core.PDFGenCore
 import no.nav.syfo.pdfgen.core.objectMapper
