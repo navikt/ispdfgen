@@ -60,4 +60,4 @@ spec:
     - name: ENABLE_PDF_GET
       value: "false"
     - name: ENABLE_PDFA_VALIDATION
-      value: "true"
+      value: "false"
