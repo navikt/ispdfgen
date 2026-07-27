@@ -20,7 +20,7 @@ private val log = LoggerFactory.getLogger("no.nav.syfo.pdfgen.core.pdf.CreatePdf
 
 fun createPDFA(
     html: String,
-    disablePDFAValidation: Boolean,
+    enablePDFAValidation: Boolean,
 ): ByteArray {
     lateinit var pdf: ByteArray
     val renderTimeMs =
@@ -56,7 +56,7 @@ fun createPDFA(
                     }.toByteArray()
         }
     log.info("PDF render took {}ms", renderTimeMs)
-    if (!disablePDFAValidation) {
+    if (enablePDFAValidation) {
         var compliant = false
         val verifyTimeMs = measureTimeMillis { compliant = verifyCompliance(pdf) }
         log.info("PDF/A verification took {}ms", verifyTimeMs)

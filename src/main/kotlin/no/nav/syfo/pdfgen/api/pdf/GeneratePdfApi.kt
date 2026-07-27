@@ -12,37 +12,39 @@ import no.nav.syfo.pdfgen.core.pdf.createHtml
 import no.nav.syfo.pdfgen.core.pdf.createHtmlFromTemplateData
 import no.nav.syfo.pdfgen.core.pdf.createPDFA
 
-fun Route.registerGeneratePdfApi(env: Environment = Environment()) {
-    if (!env.disablePdfGet) {
-        get("/{applicationName}/{template}") {
+fun Routing.registerGeneratePdfApi(env: Environment = Environment()) {
+    route("/api/v1/genpdf") {
+        if (env.enablePdfGet) {
+            get("/{applicationName}/{template}") {
+                val template = call.parameters["template"]!!
+                val applicationName = call.parameters["applicationName"]!!
+                createHtmlFromTemplateData(template, applicationName)?.let { document ->
+                    call.response.header("Content-Type", ContentType.Application.Pdf.toString())
+                    call.respond(createPDFA(document, env.enablePdfAValidation))
+                }
+                    ?: call.respondText(
+                        "Template or application not found",
+                        status = HttpStatusCode.NotFound,
+                    )
+            }
+        }
+        post("/{applicationName}/{template}") {
+            val startTime = System.currentTimeMillis()
             val template = call.parameters["template"]!!
             val applicationName = call.parameters["applicationName"]!!
-            createHtmlFromTemplateData(template, applicationName)?.let { document ->
+            val jsonNode: JsonNode = call.receive()
+
+            createHtml(template, applicationName, jsonNode)?.let { document ->
                 call.response.header("Content-Type", ContentType.Application.Pdf.toString())
-                call.respond(createPDFA(document, env.disablePdfAValidation))
+                call.respond(createPDFA(document, env.enablePdfAValidation))
+                call.application.log.info(
+                    "Done generating PDF in ${System.currentTimeMillis() - startTime}ms",
+                )
             }
                 ?: call.respondText(
                     "Template or application not found",
                     status = HttpStatusCode.NotFound,
                 )
         }
-    }
-    post("/{applicationName}/{template}") {
-        val startTime = System.currentTimeMillis()
-        val template = call.parameters["template"]!!
-        val applicationName = call.parameters["applicationName"]!!
-        val jsonNode: JsonNode = call.receive()
-
-        createHtml(template, applicationName, jsonNode)?.let { document ->
-            call.response.header("Content-Type", ContentType.Application.Pdf.toString())
-            call.respond(createPDFA(document, env.disablePdfAValidation))
-            call.application.log.info(
-                "Done generating PDF in ${System.currentTimeMillis() - startTime}ms",
-            )
-        }
-            ?: call.respondText(
-                "Template or application not found",
-                status = HttpStatusCode.NotFound,
-            )
     }
 }

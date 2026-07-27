@@ -11,7 +11,16 @@ Repository with templates for generating PDF's in iSyfo domain.
 Creating a docker image: `docker build -t ispdfgen .`
 
 ## Getting started
-When running the application you can use the env var `DISABLE_PDF_GET` to enable GET requests at
+
+### Running locally
+Build a runnable fat jar and start it with `java -jar`:
+```shell
+./gradlew shadowJar
+java -jar build/libs/app.jar
+```
+The application starts a Ktor server on port `8080`.
+
+When running the application you can use the env var `ENABLE_PDF_GET` to enable GET requests at
 `/api/v1/genpdf/<application>/<template>` which looks for test data at `data/<application>/<template>.json` and outputs
 a PDF to your browser. Additionally, the template folder will be fetched on every request, and reflect any changes made
 since the last GET, making this ideal for developing new templates for your application.

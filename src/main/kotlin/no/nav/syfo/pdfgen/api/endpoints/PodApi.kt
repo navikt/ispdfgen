@@ -7,18 +7,15 @@ import io.ktor.server.routing.Routing
 import io.ktor.server.routing.get
 import no.nav.syfo.pdfgen.application.ApplicationState
 
-const val POD_LIVENESS_PATH = "/internal/is_alive"
-const val POD_READINESS_PATH = "/internal/is_ready"
-
 fun Routing.registerPodApi(applicationState: ApplicationState) {
-    get(POD_LIVENESS_PATH) {
+    get("/internal/is_alive") {
         if (applicationState.alive) {
             call.respondText("I'm alive")
         } else {
             call.respondText("I'm dead x_x", status = HttpStatusCode.InternalServerError)
         }
     }
-    get(POD_READINESS_PATH) {
+    get("/internal/is_ready") {
         if (applicationState.ready) {
             call.respondText("I'm ready")
         } else {

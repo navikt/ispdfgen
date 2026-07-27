@@ -32,9 +32,7 @@ fun Application.apiModule(
     routing {
         registerPodApi(applicationState)
         registerMetricApi()
-        route("/api/v1/genpdf") {
-            registerGeneratePdfApi(environment)
-        }
+        registerGeneratePdfApi(environment)
     }
 }
 
