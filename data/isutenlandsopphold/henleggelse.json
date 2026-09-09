@@ -1,0 +1,97 @@
+{
+  "mottakerNavn": "Artig Trane",
+  "mottakerFodselsnummer": "12345678945",
+  "datoSendt": "12. mai 2025",
+  "documentComponents": [
+    {
+      "key": null,
+      "type": "HEADER_H1",
+      "texts": [
+        "Din søknad om utenlandsopphold er henlagt"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi viser til din søknad av 12. mai 2025 om å beholde sykepengene under opphold utenfor EU/EØS i perioden 11. juni 2025 til og med 20. juni 2025."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "[Her kommer fritekst]"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Vi bekrefter at vi har registrert søknaden din som henlagt. Til orientering kommer ikke Nav til å behandle søknaden."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du likevel ønsker at vi behandler søknaden din, må du søke på nytt. Dette gjør du ved å sende inn en ny søknad om å beholde sykepenger utenfor EU/EØS."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Har du spørsmål"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Hvis du har spørsmål kan du kontakte oss via: nav.no/kontaktoss eller telefon 55 55 33 33."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H2",
+      "texts": [
+        "Dine rettigheter"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "HEADER_H3",
+      "texts": [
+        "Rett til innsyn"
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Du kan se opplysninger i saken ved å logge deg inn på nav.no. Du kan også kontakte oss på nav.no/kontaktoss eller telefon 55 55 33 33."
+      ],
+      "title": null
+    },
+    {
+      "key": null,
+      "type": "PARAGRAPH",
+      "texts": [
+        "Med vennlig hilsen",
+        "F_Z994248 E_Z994248",
+        "Nav"
+      ],
+      "title": null
+    }
+  ]
+}
